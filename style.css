@@ -1,0 +1,188 @@
+body {
+    margin:0;
+    padding:0;
+    background:url("pastel.jpg");
+    background-size:cover;
+    font-family: "Avenir Next Regular",sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.toggle {
+    position:fixed;
+    width:50px;
+    right: 46px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:1;
+    float: right;
+}
+.toggle:before {
+    content:'+';
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:50px;
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-align:center;
+    line-height:50px;
+    border-radius:50%;
+    background: #ff878780;
+    transition:0.5s;
+}
+.toggle.active:before {
+    transform:rotate(405deg);
+    background:#f188e0;
+    color:#000;
+}
+.overlay {
+    position:fixed;
+    right: 46px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: rgba(0, 0, 0, 0.877);
+    transition: transform 0.5s;
+}
+.overlay.active {
+    transform:scale(100,100);
+}
+.menu {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:1;
+    visibility:hidden;
+}
+.menu.active {
+    visibility:visible;
+    transition-delay:0.5s;
+}
+.menu ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+.menu ul li {
+    list-style:none;
+}
+.menu ul li a {
+    color:#fff;
+    position:relative;
+    font-size:45px;
+    text-decoration:none;
+    margin:20px 0;
+    display:block;
+    text-shadow:0 2px 5px rgba(250, 241, 241, 0.685);
+    font-family:sans-serif;
+}
+.menu ul li a:before {
+    content:'';
+    position:absolute;
+    bottom:5px;
+    left:-10px;
+    width:100%;
+    height:6px;
+    background:#ffffff;
+    z-index:-1;
+    transform:scaleX(0);
+    transform-origin: top;
+    transition:transform 0.5s;
+}
+.menu ul li a:hover:before {
+    transform:scaleX(1);
+}
+
+/* ############### HEADER ################# */
+
+header.logo {
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 10;
+}
+
+.headingTop {
+    margin: 46px;
+}
+
+header .logo, header .logo:after, header .logo:before, header .toggle-button {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+/* header .navigation {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Avenir Next Regular",sans-serif;
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 90px;
+    padding-right: 100px;
+    z-index: -1;
+}
+
+header .navigation .group.active {
+    display: block;
+}
+
+header .navigation .group {
+    position: relative;
+    display: none;
+}
+
+header .navigation ul {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+
+ol, ul {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+header .navigation ul>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header .navigation a {
+    -webkit-transition: color .3s cubic-bezier(.7,0,.3,1);
+    -moz-transition: color .3s cubic-bezier(.7,0,.3,1);
+    -o-transition: color .3s cubic-bezier(.7,0,.3,1);
+    transition: color .3s cubic-bezier(.7,0,.3,1);
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.scroll-down, .scroll-down:active, .scroll-down:focus, .scroll-down:hover, .scroll-down:visited, a, a:active, a:focus, a:hover, a:visited {
+    text-decoration: none;
+} */
+
